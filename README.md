@@ -15,9 +15,9 @@ As a developer on the gameplay team at Jadu, you will be working on a character 
 6. Sit tight! We'll get back to you shortly
 
 ## Notes
-- PRs must be submitted by **05/25/23**
+- PRs must be submitted by **06/01/23**
 - Avatar model can be found in Assets/Models
 - All relevant animation files can be found in Assets/Animations
-- Any required assets, such as button images, not found in the unity project can be exported from the [design specifications] (https://www.figma.com/file/LWxr1CDNaRmTGoSdeY1fYg/Unity-Gameplay-Dev-Task?type=design&node-id=0%3A1&t=SwUNBBdtLng9OBnl-1)
+- Any required assets, such as button images, not found in the unity project can be exported from the [design specifications](https://www.figma.com/file/LWxr1CDNaRmTGoSdeY1fYg/Unity-Gameplay-Dev-Task?type=design&node-id=0%3A1&t=SwUNBBdtLng9OBnl-1)
 - All other required assets, such as custom scripts, prefabs, and animation controllers should be authored by you as part of this assignment
 - The [Figma file](https://www.figma.com/file/LWxr1CDNaRmTGoSdeY1fYg/Unity-Gameplay-Dev-Task?type=design&node-id=0%3A1&t=SwUNBBdtLng9OBnl-1) is set to view only. You can duplicate it or create a branch to export layers.
