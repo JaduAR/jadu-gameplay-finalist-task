@@ -11,7 +11,7 @@ As a developer on the gameplay team at Jadu, you will be working on a character 
 2. Complete the assignment so that the Jump Kick scene meets all technical requirements listed in the [design specifications](https://www.figma.com/file/LWxr1CDNaRmTGoSdeY1fYg/Unity-Gameplay-Dev-Task?type=design&node-id=0%3A1&t=SwUNBBdtLng9OBnl-1)
 3. Copy and sign the Test Waiver file found at `Assets/Test Test Waiver.pdf`
 4. Add the signed copy of your test waiver to the `Assets/Signed Waiver/` folder as `[Your Name] - Signed Waiver`
-5. Submit a PR titled `[Your Name] Character Customizer`.
+5. Submit a PR titled `[Your Name] Jump Kick`.
 6. Sit tight! We'll get back to you shortly
 
 ## Notes
