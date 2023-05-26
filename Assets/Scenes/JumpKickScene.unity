@@ -398,6 +398,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 581862091}
+  - component: {fileID: 581862092}
   m_Layer: 0
   m_Name: Camera Rig
   m_TagString: Untagged
@@ -421,6 +422,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 83.91, z: 0}
+--- !u!114 &581862092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581862090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8457c1ae023bb1c419a6ad2317bb899d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1090561011}
+  followSpeed: 20
 --- !u!1 &629210576
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,13 +946,18 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 36c09df91f6138a4fb3d1dfe04d82e28, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!4 &1090561011 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9cb3ba4c57ba34a62a559444b040dd62, type: 3}
+  m_PrefabInstance: {fileID: 866650121}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1115849263
 GameObject:
   m_ObjectHideFlags: 0
