@@ -16,7 +16,8 @@ public class IdleBehavior : StateMachineBehaviour
             characterController = animator.GetComponent<CharacterController>();
         }
 
-        characterController.ResetKick();
+        characterController.ResetJumpKick();
+        characterController.EndJump();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

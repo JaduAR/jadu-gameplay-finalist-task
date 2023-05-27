@@ -654,7 +654,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1090561010}
-  jumpHeight: 0
+  maxJumpHeight: 1.5
+  jumpSpeed: 2
 --- !u!1 &1197147652
 GameObject:
   m_ObjectHideFlags: 0
