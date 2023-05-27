@@ -656,6 +656,8 @@ MonoBehaviour:
   animator: {fileID: 1090561010}
   maxJumpHeight: 1.5
   jumpSpeed: 2
+  jumpCooldown: 0.75
+  allowKickOnDescend: 0
 --- !u!1 &1197147652
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,7 +796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1806538502593835476, guid: a7c339be64aeb1c4e9fe784d2a9c7ee4, type: 3}
       propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BeginJump
+      value: ButtonEvent_BeginJump
       objectReference: {fileID: 0}
     - target: {fileID: 1806538502593835476, guid: a7c339be64aeb1c4e9fe784d2a9c7ee4, type: 3}
       propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -802,7 +804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1806538502593835476, guid: a7c339be64aeb1c4e9fe784d2a9c7ee4, type: 3}
       propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EndJump
+      value: ButtonEvent_EndJump
       objectReference: {fileID: 0}
     - target: {fileID: 1806538502593835476, guid: a7c339be64aeb1c4e9fe784d2a9c7ee4, type: 3}
       propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

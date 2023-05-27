@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
+    public enum JumpState
+    {
+        Idle,
+        Ascending,
+        Descending
+    }
 
     [SerializeField]
     private Animator animator;
@@ -11,66 +17,41 @@ public class CharacterController : MonoBehaviour
     private float maxJumpHeight;
     [SerializeField]
     private float jumpSpeed;
+    [SerializeField]
+    private float jumpCooldown = 1;
+    [SerializeField]
+    private bool allowKickOnDescend;
 
-    private bool isJumping = false;
-    private bool canJump = true;
+    private JumpState jumpstate = JumpState.Idle;
+
     private bool canKick = false;
 
-    private float jumpAscendTime;
-    private float jumpDescendTime;
+    private Coroutine jumpRoutine = null;
 
-    public void BeginJump()
+    public void ButtonEvent_BeginJump()
     {
-        if (!canJump) return;
-
-        Debug.Log("Begin Jump");
-        isJumping = true;
-        canKick = true;
-        canJump = false;
-
-        UpdateJumpAnimation();
-
-        StartCoroutine(Co_AnimateTransformJump());
+        BeginJump();
     }
 
-    public void EndJump()
+    private void BeginJump()
     {
-        Debug.Log("End Jump");
+        if (jumpstate != JumpState.Idle || jumpRoutine != null) return;
 
-        ResetJumpKick();
+        jumpstate = JumpState.Ascending;
+
+        canKick = true;
 
         UpdateJumpAnimation();
+
+        jumpRoutine = StartCoroutine(Co_AnimateTransformForJump());
     }
 
     private void UpdateJumpAnimation()
     {
-        animator.SetBool("IsJumping", isJumping);
+        animator.SetBool("IsAscending", jumpstate == JumpState.Ascending);
     }
 
-    public void ResetJumpKick()
-    {
-        isJumping = false;
-        canJump = true;
-        canKick = false;
-
-        animator.SetFloat("JumpValue", 0);
-    }
-
-    public void AttemptKick()
-    {
-        if (/*!isJumping || */!canKick) return;
-
-        Debug.Log("Kick");
-
-        animator.SetTrigger("Kick");
-
-        canKick = false;
-        isJumping = false;
-
-        UpdateJumpAnimation();
-    }
-
-    private IEnumerator Co_AnimateTransformJump()
+    private IEnumerator Co_AnimateTransformForJump()
     {
         Vector3 startPos = transform.position;
         Vector3 endPos = startPos;
@@ -79,11 +60,9 @@ public class CharacterController : MonoBehaviour
         float currentTime = 0;
         float per;
 
-        jumpAscendTime = maxJumpHeight / jumpSpeed;
+        float jumpAscendTime = maxJumpHeight / jumpSpeed;
 
-        Debug.Log($"Ascend Time: {jumpAscendTime}");
-
-        while (isJumping && currentTime < jumpAscendTime)
+        while (jumpstate == JumpState.Ascending && currentTime < jumpAscendTime)
         {
             per = currentTime / jumpAscendTime;
             transform.position = Vector3.Lerp(startPos, endPos, Easings.EaseOutCirc(per));
@@ -95,19 +74,14 @@ public class CharacterController : MonoBehaviour
             animator.SetFloat("JumpValue", per);
         }
 
-        if(isJumping)
+        if (jumpstate == JumpState.Ascending)
         {
             transform.position = endPos;
-            //animator.SetFloat("JumpValue", 1);
         }
 
-        //while(isJumping)
-        //{
-        //    yield return null;
-        //}
+        canKick = allowKickOnDescend;
 
-        canKick = false;
-        isJumping = false;
+        jumpstate = JumpState.Descending;
 
         UpdateJumpAnimation();
 
@@ -115,7 +89,7 @@ public class CharacterController : MonoBehaviour
 
         float fallHeight = Mathf.Abs(startPos.y - transform.position.y);
 
-        jumpDescendTime = Mathf.Sqrt((fallHeight * 2) / Mathf.Abs(Physics.gravity.y));
+        float jumpDescendTime = Mathf.Sqrt((fallHeight * 2) / Mathf.Abs(Physics.gravity.y));
 
         endPos = transform.position;
 
@@ -136,6 +110,54 @@ public class CharacterController : MonoBehaviour
 
         animator.SetTrigger("Recover");
 
+        jumpRoutine = null;
+
+        Invoke("JumpEnded", jumpCooldown);
+    }
+
+    public void ButtonEvent_EndJump()
+    {
         EndJump();
     }
+
+    private void EndJump()
+    {
+        //Debug.Log("End Jump");
+
+        if(jumpstate == JumpState.Ascending )
+        {
+            jumpstate = JumpState.Descending;
+        }
+
+        UpdateJumpAnimation();
+    }
+
+    public void AttemptKick()
+    {
+        if (!canKick) return;
+
+        //Debug.Log("Kick");
+
+        animator.SetTrigger("Kick");
+
+        canKick = false;
+
+        jumpstate = JumpState.Descending;
+
+        UpdateJumpAnimation();
+    }
+
+    private void JumpEnded()
+    {
+        ResetJumpKick();
+    }
+
+    private void ResetJumpKick()
+    {
+        canKick = false;
+        jumpstate = JumpState.Idle;
+
+        animator.SetFloat("JumpValue", 0);
+    }
+
 }
