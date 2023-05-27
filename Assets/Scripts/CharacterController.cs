@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CharacterController : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class CharacterController : MonoBehaviour
     private float jumpCooldown = 1;
     [SerializeField]
     private bool allowKickOnDescend;
+
+    public UnityEvent<bool> JumpAvailabilityChanged;
 
     private JumpState jumpstate = JumpState.Idle;
 
@@ -117,6 +120,8 @@ public class CharacterController : MonoBehaviour
 
     public void ButtonEvent_EndJump()
     {
+        JumpAvailabilityChanged?.Invoke(false);
+
         EndJump();
     }
 
@@ -149,6 +154,8 @@ public class CharacterController : MonoBehaviour
 
     private void JumpEnded()
     {
+        JumpAvailabilityChanged?.Invoke(true);
+
         ResetJumpKick();
     }
 

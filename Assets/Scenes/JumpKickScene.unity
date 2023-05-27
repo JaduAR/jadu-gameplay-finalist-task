@@ -658,6 +658,21 @@ MonoBehaviour:
   jumpSpeed: 2
   jumpCooldown: 0.75
   allowKickOnDescend: 0
+  JumpAvailabilityChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1727442297}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: set_interactable
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1197147652
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +741,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1727442297 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1806538502593835476, guid: a7c339be64aeb1c4e9fe784d2a9c7ee4, type: 3}
+  m_PrefabInstance: {fileID: 8840827274153645181}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3c9b77b84c14e40947671e3f04fde2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2044839628 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8098115762660129312, guid: 9cb3ba4c57ba34a62a559444b040dd62, type: 3}
