@@ -764,6 +764,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 795017526}
     m_Modifications:
+    - target: {fileID: 435035752241737630, guid: a7c339be64aeb1c4e9fe784d2a9c7ee4, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 435035752241737630, guid: a7c339be64aeb1c4e9fe784d2a9c7ee4, type: 3}
+      propertyPath: m_Colors.m_ColorMultiplier
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 693899316988167436, guid: a7c339be64aeb1c4e9fe784d2a9c7ee4, type: 3}
       propertyPath: onHover.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -979,6 +987,22 @@ PrefabInstance:
     - target: {fileID: 8212827000684774729, guid: a7c339be64aeb1c4e9fe784d2a9c7ee4, type: 3}
       propertyPath: onHover.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239782959823078794, guid: a7c339be64aeb1c4e9fe784d2a9c7ee4, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239782959823078794, guid: a7c339be64aeb1c4e9fe784d2a9c7ee4, type: 3}
+      propertyPath: m_Colors.m_ColorMultiplier
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8269276446373946409, guid: a7c339be64aeb1c4e9fe784d2a9c7ee4, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8269276446373946409, guid: a7c339be64aeb1c4e9fe784d2a9c7ee4, type: 3}
+      propertyPath: m_Colors.m_ColorMultiplier
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8723659147829649463, guid: a7c339be64aeb1c4e9fe784d2a9c7ee4, type: 3}
       propertyPath: m_AnchorMax.y
