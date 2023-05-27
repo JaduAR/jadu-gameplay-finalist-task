@@ -1,0 +1,4 @@
+Hello!
+Some notes on the animation clips themselves:
+- I couldn't help but notice that some of the animations appeared to be a little broken such as leg/ankle rotation/alignment like in the "ascend" and "descend" anims. I attempted to see if I could change anything in the import settings or avatar configuration itself to remedy the issue but had no luck. Normally I would contact the artist the animation came from in order to get to the bottom of an issue like this, so the broken appearance remains.
+- In order to control the animation the way I needed to allow for variable jump height I first disabled root motion in the animation clips but the character model's height was still being dictated by the animations themselves. I wound up editing the animation clips to achieve the desired effect of the characterss y-position being controlled by script.
