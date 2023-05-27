@@ -5,14 +5,22 @@ using UnityEngine;
 public class CameraRig : MonoBehaviour
 {
     [SerializeField]
-    private Transform target;
+    private Transform targetRoot;
+    [SerializeField]
+    private Transform heightTarget;
     [SerializeField]
     private float followSpeed;
 
+    Vector3 targetPosition = Vector3.zero;
+
     private void LateUpdate()
     {
-        if(!target) return;
+        if(!targetRoot) return;
 
-        transform.position = Vector3.Lerp(transform.position, target.position, Time.deltaTime * followSpeed);
+        targetPosition.x = targetRoot.position.x;
+        targetPosition.z = targetRoot.position.z;
+        targetPosition.y = heightTarget.position.y;
+
+        transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * followSpeed);
     }
 }
