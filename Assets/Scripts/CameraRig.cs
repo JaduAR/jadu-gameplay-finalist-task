@@ -9,6 +9,8 @@ public class CameraRig : MonoBehaviour
     [SerializeField]
     private Transform heightTarget;
     [SerializeField]
+    private float heightOffset;
+    [SerializeField]
     private float followSpeed;
 
     Vector3 targetPosition = Vector3.zero;
@@ -19,7 +21,7 @@ public class CameraRig : MonoBehaviour
 
         targetPosition.x = targetRoot.position.x;
         targetPosition.z = targetRoot.position.z;
-        targetPosition.y = heightTarget.position.y;
+        targetPosition.y = heightTarget.position.y + heightOffset;
 
         transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * followSpeed);
     }

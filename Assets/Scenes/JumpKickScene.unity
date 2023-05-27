@@ -267,17 +267,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetRoot: {fileID: 1090561011}
-  heightTarget: {fileID: 654727355}
+  heightTarget: {fileID: 2044839628}
+  heightOffset: -0.73
   followSpeed: 10
 --- !u!224 &629210577 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8840827273558075820, guid: a7c339be64aeb1c4e9fe784d2a9c7ee4, type: 3}
   m_PrefabInstance: {fileID: 8840827274153645181}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &654727355 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -2781288149496950206, guid: 9cb3ba4c57ba34a62a559444b040dd62, type: 3}
-  m_PrefabInstance: {fileID: 866650121}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
@@ -727,6 +723,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2044839628 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8098115762660129312, guid: 9cb3ba4c57ba34a62a559444b040dd62, type: 3}
+  m_PrefabInstance: {fileID: 866650121}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8840827274153645181
 PrefabInstance:
   m_ObjectHideFlags: 0
