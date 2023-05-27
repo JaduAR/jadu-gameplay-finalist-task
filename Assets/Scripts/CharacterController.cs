@@ -120,7 +120,10 @@ public class CharacterController : MonoBehaviour
 
     public void ButtonEvent_EndJump()
     {
-        JumpAvailabilityChanged?.Invoke(false);
+        if(jumpstate != JumpState.Idle)
+        {
+            JumpAvailabilityChanged?.Invoke(false);
+        }
 
         EndJump();
     }
