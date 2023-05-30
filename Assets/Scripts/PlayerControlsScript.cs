@@ -11,9 +11,7 @@ public class PlayerControlsScript : MonoBehaviour
     private Animator anim;
 
     public Button jumpButton;
-    public Button kickButton;
-    public Sprite jumpSprite;
-    public Sprite kickSprite;
+    public Image jumpKickGraphic;
 
     void Start()
     {
@@ -30,26 +28,49 @@ public class PlayerControlsScript : MonoBehaviour
             velocity = 0;
             ResetFloor();
         }
-        //can only jump if you're standing on the ground
-        if (Input.GetKeyDown(KeyCode.Space) && transform.localPosition.y == 0)
-        {
-            velocity = jumpForce;
-            anim.SetBool("isGrounded", false);
-            anim.ResetTrigger("Kick");
-            anim.SetTrigger("Jump");
-        }
+        
         //if you let go of the jump button before reaching peak height, you start falling early
-        if (Input.GetKeyUp(KeyCode.Space) && velocity > 0)
+        if (Input.touchCount > 0 && velocity > 0)
         {
-            velocity = 0;
+            if (Input.GetTouch(0).phase == TouchPhase.Ended)
+            {
+                jumpButton.GetComponent<Image>().enabled = true;
+                jumpKickGraphic.enabled = false;
+                velocity = 0;
+            }
         }
         transform.Translate(new Vector3(0, velocity, 0) * Time.deltaTime);
+    }
 
-        //if you slide to the kick button while holding jump, do a jump kick
-        if (Input.GetKeyDown(KeyCode.C) /*hold confirm on jump button goes here*/)
+    public void Jump()
+    {
+        //can only jump if you're standing on the ground
+        if (Input.touchCount > 0 && transform.localPosition.y == 0)
         {
-            anim.ResetTrigger("Jump");
-            anim.SetTrigger("Kick");
+            if (Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                jumpButton.GetComponent<Image>().enabled = false;
+                jumpKickGraphic.enabled = true;
+                velocity = jumpForce;
+                anim.SetBool("isGrounded", false);
+                anim.ResetTrigger("Kick");
+                anim.SetTrigger("Jump");
+            }
+        }
+    }
+
+    public void Kick()
+    {
+        //if you slide to the kick button without removing your finger from the screen after jumping, perform kick animation
+        if (Input.touchCount > 0)
+        {
+            //these touch phase checks ensure that the kick button cannot be individually pressed, the initating touch must slide to the button
+            //from elsewhere on the screen
+            if (Input.GetTouch(0).phase == TouchPhase.Moved || Input.GetTouch(0).phase == TouchPhase.Stationary)
+            {
+                anim.ResetTrigger("Jump");
+                anim.SetTrigger("Kick");
+            }
         }
     }
 
