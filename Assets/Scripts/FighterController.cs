@@ -68,11 +68,12 @@ public class FighterController : MonoBehaviour
         rigidbody.AddForce(jumpForce * Vector3.up);
         IsJumping = true;
         jumpTimer = 0.7f;
+        kickTimer = 0.0f;
     }
 
     private void Kick(){
         animator.Play("JumpKick");
-        kickTimer = 1.1f;
+        kickTimer = 0.8f;
     }
 
     private bool IsPlayerGrounded(){
@@ -80,7 +81,6 @@ public class FighterController : MonoBehaviour
         bool grounded = Physics.Raycast(transform.position, Vector3.down, out hit, 0.01f, groundLayerMask);
         if(IsJumping && jumpTimer <= 0 && grounded){
             IsJumping = false;
-            kickTimer = 0.0f;
         }
         return grounded;
     }
