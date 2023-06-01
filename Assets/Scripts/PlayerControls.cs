@@ -5,6 +5,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerControls : MonoBehaviour{
 
@@ -12,6 +13,10 @@ public class PlayerControls : MonoBehaviour{
     [SerializeField]
     Transform punchButtonTransform, kickButtonTransform, blockButtonTransform,
      jumpButtonTransform, duckButtonTransform;
+    [SerializeField]
+    Image jumpKickConnectorImg;
+    bool hoveringOverKickButton;
+    Vector3 kickButtonInitialLocalScale;
 
     // Player Transforms
     [SerializeField]
@@ -35,6 +40,12 @@ public class PlayerControls : MonoBehaviour{
         // Initialize the player animator parameters
         playerAnimator.SetBool("IsJumping", isJumping);
         playerAnimator.SetBool("IsFalling", isFalling);
+
+        // Initial kick button's initial scale
+        kickButtonInitialLocalScale = kickButtonTransform.localScale;
+
+        // Make invisible the jump-kick connector image
+        jumpKickConnectorImg.CrossFadeAlpha(0f, 0f, true);
     }
 
     // Called once per frame
@@ -55,14 +66,17 @@ public class PlayerControls : MonoBehaviour{
         }else if(isFalling){
             /* Timeout after the same duration that you previously jumped, to
              * return the player to the starting position */
-            if(Time.time - fallStartTime <= prevJumpDuration){
-                playerTransform.position -= new Vector3(0f, 2f, 0f) * Time.deltaTime;
+            if(Time.time - fallStartTime <= prevJumpDuration * 2f){
+                playerTransform.position -= new Vector3(0f, 1f, 0f) * Time.deltaTime;
             }else{
                 /* Enforce player's position to ground-level (preclude timing glitches
                  * from getting out of hand / persisting) */
                 playerTransform.position = playerInitialPosition;
                 isFalling = false;
                 playerAnimator.SetBool("IsFalling", isFalling);
+                playerAnimator.ResetTrigger("ThrowKick");
+                kickButtonTransform.localScale = kickButtonInitialLocalScale;
+                jumpKickConnectorImg.CrossFadeAlpha(0f, 0.15f, false);
                 prevJumpDuration = 0f;
                 fallStartTime = -1f;
             }
@@ -96,5 +110,24 @@ public class PlayerControls : MonoBehaviour{
             // DEBUG
             print("Jump done!");
         }
+    }
+    public void OnDragBeginJumpButton(){
+        
+    }
+    public void OnDragEndJumpButton(){
+        if(hoveringOverKickButton /*&& (isJumping || isFalling)*/){
+            if(/*(isJumping && Time.time - jumpStartTime >= 0.111f) ||
+             (isFalling && Time.time - fallStartTime <= 0.445f)*/prevJumpDuration >= 0.167f){
+                kickButtonTransform.localScale *= 1.2f;
+                playerAnimator.SetTrigger("ThrowKick");
+                jumpKickConnectorImg.CrossFadeAlpha(1f, 0.15f, false);
+            }
+        }
+    }
+    public void OnHoverEnterKickButton(){
+        hoveringOverKickButton = true;
+    }
+    public void OnHoverExitKickButton(){
+        hoveringOverKickButton = false;
     }
 }
