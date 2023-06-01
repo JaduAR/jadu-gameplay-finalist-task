@@ -24,17 +24,13 @@ public class AdvancedButton : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        print("Entering!");
         if (onSlideRequiredParam != "")
         {
             if (anim.GetBool(onSlideRequiredParam))
             {
                 onSlideEvent.Invoke();
             }
-            else
-            {
-                print("Nope");
-            }
+            // else ignore the swipe
         }
         else
         {
