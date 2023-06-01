@@ -1,0 +1,7 @@
+Steven Gussman    6/1/23 12:55 AM    Sources Cited
+
+- Official Unity documentation
+- twentyeightb for iPhone 12's aspect ratio (https://28b.co.uk/ios-device-dimensions-reference-table/)
+- Unity Forum users FeastSC2 and dom_cobb_22 for information on Unity's animation system (regarding inherent translation) (https://forum.unity.com/threads/disable-root-motion-on-some-animations.563482/)
+- Unity Answers users Vlad_Sharpov and MickyX for information on Unity animation import settings (regarding inherent translation) (https://answers.unity.com/questions/1900407/how-can-i-disable-root-motion-during-animation-pla.html)
+- Unity Forum users desmonnd96 and davejas for for information on Unity animation import settings (regarding inherent translation) (https://forum.unity.com/threads/removing-read-only-from-animation-clips.514549/)
