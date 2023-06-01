@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -14,11 +12,13 @@ public class PlayerController : MonoBehaviour
 
     Animator animator;
     Rigidbody rb;
+    Hud hud;
 
     void Awake()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
+        hud = FindObjectOfType<Hud>();
     }
     
     void FixedUpdate()
@@ -54,6 +54,8 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             if (jumpTimer >= maxJumpTime) canJump = false;
         }
+        hud.kickSwipeImage.enabled = jumping;
+        hud.jumpButton.image.enabled = (!jumping && canJump);
     }
 
     //jumps OnHold()

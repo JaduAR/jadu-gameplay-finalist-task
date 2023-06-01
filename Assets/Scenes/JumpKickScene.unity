@@ -389,7 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe2deafe20120254a92ebc7f6bc342d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxJumpTime: 0.08
+  maxJumpTime: 0.12
   jumpForce: 1
 --- !u!1 &1553849006
 GameObject:
@@ -466,6 +466,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2651834109538066549, guid: e866aaaff72971448896ccf9433b4c5e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3459042061854279950, guid: e866aaaff72971448896ccf9433b4c5e, type: 3}
+      propertyPath: m_Name
+      value: SwipeImage
+      objectReference: {fileID: 0}
     - target: {fileID: 7610814103901346848, guid: e866aaaff72971448896ccf9433b4c5e, type: 3}
       propertyPath: m_Name
       value: Hud
@@ -574,6 +582,10 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Jump
       objectReference: {fileID: 0}
+    - target: {fileID: 7610814104531982047, guid: e866aaaff72971448896ccf9433b4c5e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 462861613, guid: 1892d303dd13c864f8a7ff999be74809, type: 3}
     - target: {fileID: 7610814105264280776, guid: e866aaaff72971448896ccf9433b4c5e, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
