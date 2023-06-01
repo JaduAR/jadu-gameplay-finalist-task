@@ -92,8 +92,6 @@ public class PlayerControls : MonoBehaviour{
             jumpStartTime = Time.time;
             // Visuals
             jumpButtonTransform.localScale *= 1.2f;
-            // DEBUG
-            print("Jumped!");
         }
     }
     public void OnLiftJumpButton(){
@@ -107,17 +105,11 @@ public class PlayerControls : MonoBehaviour{
             fallStartTime = Time.time;
             // Visuals
             jumpButtonTransform.localScale /= 1.2f;
-            // DEBUG
-            print("Jump done!");
         }
     }
-    public void OnDragBeginJumpButton(){
-        
-    }
     public void OnDragEndJumpButton(){
-        if(hoveringOverKickButton /*&& (isJumping || isFalling)*/){
-            if(/*(isJumping && Time.time - jumpStartTime >= 0.111f) ||
-             (isFalling && Time.time - fallStartTime <= 0.445f)*/prevJumpDuration >= 0.167f){
+        if(hoveringOverKickButton){
+            if(prevJumpDuration >= 0.167f){
                 kickButtonTransform.localScale *= 1.2f;
                 playerAnimator.SetTrigger("ThrowKick");
                 jumpKickConnectorImg.CrossFadeAlpha(1f, 0.15f, false);
