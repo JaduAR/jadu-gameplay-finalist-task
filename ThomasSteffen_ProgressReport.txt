@@ -1,0 +1,51 @@
+Initial AR setup:
+- Installed AR Foundation, ARCore, and ARKit from the Unity Registry of Package Manager.
+- Set up the Plug-in Provider ARCore under Android in File > Project Settings > XR Plug-in Managemenmt
+- Removed the Vulkan Graphics APIs for Android, since these are not yet supported by ARCore.
+- Set the Scripting Backend to IL2CPP instead of Mono to allow for 64-bit support.
+- Set the Target Architecture to ARM64 (64-bit ARM) to meet the Google Play 64-bit requirement.
+- Set minimum API to 24, as per ARCore requirements.
+
+Scene Setup:
+- Removed Main Camera
+- Added in AR Session Origin (This will act as the user's phone camera)
+- Added in AR Session (The AR Session manages an individual session of the AR experience, including things like frame rate and communication with the device.)
+
+Animation Tree:
+- Created Animator Controller
+- Most animations were named Take001, this conflicts in the animation window, updated/renamed animation clip names accordingly.
+- Reviewed animations to identify order they should be played
+- Set up animation order and created a parameter Int to control animation clip order via code
+
+UI:
+- Imported UI Buttons from the Design Specifications document provided
+- Created a UI Canvas and button layout, adjusted anchors and positions for varying resolutions
+- Disabled all UI buttons except the Kick and Jump buttons
+
+Scripts:
+- Created PlayerController script
+- This controls the actual physics, jumping, and other specific character parameters
+
+- Created AnimationManager script
+- I decided to make a separate script to control switching animation states for organization and dynamic use
+
+- Created scripts for the Jump and Kick buttons
+- - I decided to use the UnityEngine.EventSystems in order to detect Holding Down a button and Releasing it.
+
+Player Game Object:
+- Updated player object's tag to Player for reference finding.
+- Added a rigidbody, constrained Z axis rotation, Collision set to Continuous
+- Added Capsule collider fitted to model
+
+Script - Ground Detection:
+Within the player controller script
+- Created bool and raycast to identify if character "isGrounded" to control jumping.
+
+Script - UI interaction
+- Created scripts using Pointer Events to detect Hover, Tap, Press Down, Release, and Exit Hover
+- This is to detect jump length through the UI
+- This also allows the holding of a button, then sliding to another, for example, the directed jump kick.
+
+Animations
+- Set up the animation switching in the PlayerController
+- Playtested to make sure everything transitioned smoothly and made adjustments to Code and the Animation Tree

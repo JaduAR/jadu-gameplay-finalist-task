@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/JumpKickScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6fdf3bb8670934b4b9ac842897b0160c, type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 9c63609f96fb1dc42a717cc1ab94e14b, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: be82b90b93faf834bbd0211c27007466, type: 2}
