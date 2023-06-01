@@ -18,6 +18,10 @@ public class PlayerControls : MonoBehaviour{
     Transform playerTransform;
     Vector3 playerInitialPosition;
 
+    // Player animation
+    [SerializeField]
+    Animator playerAnimator;
+
     // Jump control variables
     bool isJumping, isFalling;
     float jumpStartTime = -1f, prevJumpDuration, fallStartTime = -1f;
@@ -27,15 +31,19 @@ public class PlayerControls : MonoBehaviour{
     void Start(){
         // Store the player's initial position (grounded)
         playerInitialPosition = playerTransform.position;
+
+        // Initialize the player animator parameters
+        playerAnimator.SetBool("IsJumping", isJumping);
+        playerAnimator.SetBool("IsFalling", isFalling);
     }
 
     // Called once per frame
-    void Update(){
+    void Update(){         
         // Player is jumping
         if(isJumping){
             /* Time-out after one second of jumping, if the player hasn't manually lifted 
              * the button */
-            if(Time.time - jumpStartTime <= 0.25f){
+            if(Time.time - jumpStartTime <= 0.333f){
                 playerTransform.position += new Vector3(0f, 2f, 0f) * Time.deltaTime;
             }else{
                 // Automatically "lift" the player's jump button on timeout
@@ -54,6 +62,7 @@ public class PlayerControls : MonoBehaviour{
                  * from getting out of hand / persisting) */
                 playerTransform.position = playerInitialPosition;
                 isFalling = false;
+                playerAnimator.SetBool("IsFalling", isFalling);
                 prevJumpDuration = 0f;
                 fallStartTime = -1f;
             }
@@ -65,6 +74,7 @@ public class PlayerControls : MonoBehaviour{
         if(!isJumping){
             // Logic
             isJumping = true;
+            playerAnimator.SetBool("IsJumping", isJumping);
             jumpStartTime = Time.time;
             // Visuals
             jumpButtonTransform.localScale *= 1.2f;
@@ -75,9 +85,11 @@ public class PlayerControls : MonoBehaviour{
     public void OnLiftJumpButton(){
         if(isJumping){
             isJumping = false;
+            playerAnimator.SetBool("IsJumping", isJumping);
             prevJumpDuration = Time.time - jumpStartTime;
             jumpStartTime = -1f;
             isFalling = true;
+            playerAnimator.SetBool("IsFalling", isFalling);
             fallStartTime = Time.time;
             // Visuals
             jumpButtonTransform.localScale /= 1.2f;
