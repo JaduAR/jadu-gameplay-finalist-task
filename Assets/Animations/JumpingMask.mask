@@ -1,0 +1,237 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: JumpingMask
+  m_Mask: 00000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Body
+    m_Weight: 1
+  - m_Path: Group
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/GroundAttach_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Hips_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Left_UpperLeg_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Left_UpperLeg_Jnt/Left_LowerLeg_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Left_UpperLeg_Jnt/Left_LowerLeg_Jnt/Left_Foot_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Left_UpperLeg_Jnt/Left_LowerLeg_Jnt/Left_Foot_Jnt/Left_Foot_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Left_UpperLeg_Jnt/Left_LowerLeg_Jnt/Left_Foot_Jnt/Left_Toes_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Left_UpperLeg_Jnt/Left_LowerLeg_Jnt/Left_Foot_Jnt/Left_Toes_Jnt/Left_ToesEnd_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Left_UpperLeg_Jnt/Left_LowerLeg_Jnt/Left_Foot_Jnt/Left_Toes_Jnt/Left_ToesEnd_Jnt/Left_ToesEnd_Jnt_end
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Left_UpperLeg_Jnt/Left_LowerLeg_Jnt/Left_LowerLeg_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Left_UpperLeg_Jnt/Left_UpperLeg_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Right_UpperLeg_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Right_UpperLeg_Jnt/Right_LowerLeg_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Right_UpperLeg_Jnt/Right_LowerLeg_Jnt/Right_Foot_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Right_UpperLeg_Jnt/Right_LowerLeg_Jnt/Right_Foot_Jnt/Right_Foot_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Right_UpperLeg_Jnt/Right_LowerLeg_Jnt/Right_Foot_Jnt/Right_Toes_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Right_UpperLeg_Jnt/Right_LowerLeg_Jnt/Right_Foot_Jnt/Right_Toes_Jnt/Right_ToesEnd_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Right_UpperLeg_Jnt/Right_LowerLeg_Jnt/Right_Foot_Jnt/Right_Toes_Jnt/Right_ToesEnd_Jnt/Right_ToesEnd_Jnt_end
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Right_UpperLeg_Jnt/Right_LowerLeg_Jnt/Right_LowerLeg_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Hips_Jnt/Right_UpperLeg_Jnt/Right_UpperLeg_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/BackAttach_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Chest_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Heart_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_LowerArm_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_IndexFinger1_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_IndexFinger1_Jnt/Left_IndexFinger2_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_IndexFinger1_Jnt/Left_IndexFinger2_Jnt/Left_IndexFinger3_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_IndexFinger1_Jnt/Left_IndexFinger2_Jnt/Left_IndexFinger3_Jnt/Left_IndexFinger4_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_IndexFinger1_Jnt/Left_IndexFinger2_Jnt/Left_IndexFinger3_Jnt/Left_IndexFinger4_Jnt/Left_IndexFinger4_Jnt_end
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_MiddleFinger1_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_MiddleFinger1_Jnt/Left_MiddleFinger2_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_MiddleFinger1_Jnt/Left_MiddleFinger2_Jnt/Left_MiddleFinger3_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_MiddleFinger1_Jnt/Left_MiddleFinger2_Jnt/Left_MiddleFinger3_Jnt/Left_MiddleFinger4_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_MiddleFinger1_Jnt/Left_MiddleFinger2_Jnt/Left_MiddleFinger3_Jnt/Left_MiddleFinger4_Jnt/Left_MiddleFinger4_Jnt_end
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_PalmAttach_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_PinkyFinger1_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_PinkyFinger1_Jnt/Left_PinkyFinger2_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_PinkyFinger1_Jnt/Left_PinkyFinger2_Jnt/Left_PinkyFinger3_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_PinkyFinger1_Jnt/Left_PinkyFinger2_Jnt/Left_PinkyFinger3_Jnt/Left_PinkyFinger4_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_PinkyFinger1_Jnt/Left_PinkyFinger2_Jnt/Left_PinkyFinger3_Jnt/Left_PinkyFinger4_Jnt/Left_PinkyFinger4_Jnt_end
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_RingFinger1_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_RingFinger1_Jnt/Left_RingFinger2_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_RingFinger1_Jnt/Left_RingFinger2_Jnt/Left_RingFinger3_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_RingFinger1_Jnt/Left_RingFinger2_Jnt/Left_RingFinger3_Jnt/Left_RingFinger4_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_RingFinger1_Jnt/Left_RingFinger2_Jnt/Left_RingFinger3_Jnt/Left_RingFinger4_Jnt/Left_RingFinger4_Jnt_end
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_ThumbFinger1_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_ThumbFinger1_Jnt/Left_ThumbFinger2_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_ThumbFinger1_Jnt/Left_ThumbFinger2_Jnt/Left_ThumbFinger3_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_ThumbFinger1_Jnt/Left_ThumbFinger2_Jnt/Left_ThumbFinger3_Jnt/Left_ThumbFinger4_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_LowerArm_Jnt/Left_Wrist_Jnt/Left_ThumbFinger1_Jnt/Left_ThumbFinger2_Jnt/Left_ThumbFinger3_Jnt/Left_ThumbFinger4_Jnt/Left_ThumbFinger4_Jnt_end
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Left_Shoulder_Jnt/Left_UpperArm_Jnt/Left_UpperArm_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Neck_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Neck_Jnt/Head_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Neck_Jnt/Head_Jnt/DigiMask_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Neck_Jnt/Head_Jnt/Grille_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Neck_Jnt/Head_Jnt/Head_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Neck_Jnt/Head_Jnt/HeadEnd_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Neck_Jnt/Head_Jnt/HeadEnd_Jnt/HeadEnd_Jnt_end
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_LowerArm_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_IndexFinger1_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_IndexFinger1_Jnt/Right_IndexFinger2_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_IndexFinger1_Jnt/Right_IndexFinger2_Jnt/Right_IndexFinger3_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_IndexFinger1_Jnt/Right_IndexFinger2_Jnt/Right_IndexFinger3_Jnt/Right_IndexFinger4_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_IndexFinger1_Jnt/Right_IndexFinger2_Jnt/Right_IndexFinger3_Jnt/Right_IndexFinger4_Jnt/Right_IndexFinger4_Jnt_end
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_MiddleFinger1_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_MiddleFinger1_Jnt/Right_MiddleFinger2_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_MiddleFinger1_Jnt/Right_MiddleFinger2_Jnt/Right_MiddleFinger3_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_MiddleFinger1_Jnt/Right_MiddleFinger2_Jnt/Right_MiddleFinger3_Jnt/Right_MiddleFinger4_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_MiddleFinger1_Jnt/Right_MiddleFinger2_Jnt/Right_MiddleFinger3_Jnt/Right_MiddleFinger4_Jnt/Right_MiddleFinger4_Jnt_end
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_PalmAttach_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_PinkyFinger1_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_PinkyFinger1_Jnt/Right_PinkyFinger2_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_PinkyFinger1_Jnt/Right_PinkyFinger2_Jnt/Right_PinkyFinger3_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_PinkyFinger1_Jnt/Right_PinkyFinger2_Jnt/Right_PinkyFinger3_Jnt/Right_PinkyFinger4_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_PinkyFinger1_Jnt/Right_PinkyFinger2_Jnt/Right_PinkyFinger3_Jnt/Right_PinkyFinger4_Jnt/Right_PinkyFinger4_Jnt_end
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_RingFinger1_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_RingFinger1_Jnt/Right_RingFinger2_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_RingFinger1_Jnt/Right_RingFinger2_Jnt/Right_RingFinger3_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_RingFinger1_Jnt/Right_RingFinger2_Jnt/Right_RingFinger3_Jnt/Right_RingFinger4_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_RingFinger1_Jnt/Right_RingFinger2_Jnt/Right_RingFinger3_Jnt/Right_RingFinger4_Jnt/Right_RingFinger4_Jnt_end
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_ThumbFinger1_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_ThumbFinger1_Jnt/Right_ThumbFinger2_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_ThumbFinger1_Jnt/Right_ThumbFinger2_Jnt/Right_ThumbFinger3_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_ThumbFinger1_Jnt/Right_ThumbFinger2_Jnt/Right_ThumbFinger3_Jnt/Right_ThumbFinger4_Jnt
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_LowerArm_Jnt/Right_Wrist_Jnt/Right_ThumbFinger1_Jnt/Right_ThumbFinger2_Jnt/Right_ThumbFinger3_Jnt/Right_ThumbFinger4_Jnt/Right_ThumbFinger4_Jnt_end
+    m_Weight: 1
+  - m_Path: Group/DeformationSystem/root/Root_Jnt/Spine1_Jnt/Spine2_Jnt/Chest_Jnt/Right_Shoulder_Jnt/Right_UpperArm_Jnt/Right_UpperArm_Mod_Socket
+    m_Weight: 1
+  - m_Path: Group/Geometry
+    m_Weight: 1
+  - m_Path: Group/Geometry/geo
+    m_Weight: 1
+  - m_Path: Group/MotionSystem
+    m_Weight: 1
+  - m_Path: Group/MotionSystem/MainSystem
+    m_Weight: 1
+  - m_Path: Group/MotionSystem/MainSystem/MainExtra3
+    m_Weight: 1
+  - m_Path: Group/MotionSystem/MainSystem/MainExtra3/MainExtra2
+    m_Weight: 1
+  - m_Path: Group/MotionSystem/MainSystem/MainExtra3/MainExtra2/MainExtra1
+    m_Weight: 1
+  - m_Path: Group/MotionSystem/MainSystem/MainExtra3/MainExtra2/MainExtra1/Main
+    m_Weight: 1
+  - m_Path: Hair
+    m_Weight: 1
